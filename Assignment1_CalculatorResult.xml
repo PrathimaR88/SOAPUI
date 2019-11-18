@@ -1,0 +1,18 @@
+TestCase [Addition] started at 2019-11-18 14:36:49.498
+TestCase [Addition] finished with status [FINISHED], time taken = 247
+TestCase [Subtraction] started at 2019-11-18 14:36:49.769
+Step 1 [Addition] OK: took 247 ms
+TestCase [Subtraction] finished with status [FINISHED], time taken = 259
+Step 2 [Subtraction] OK: took 259 ms
+TestCase [Multiplication] started at 2019-11-18 14:36:50.038
+Step 1 [Multiplication] OK: took 294 ms
+TestCase [Multiplication] finished with status [FINISHED], time taken = 545
+TestCase [Division] started at 2019-11-18 14:36:50.593
+Step 1 [MultySOAPResponse] OK: took 251 ms
+Step 2 [Division] OK: took 326 ms
+TestCase [Division] finished with status [FINISHED], time taken = 767
+TestCase [DivisionDecimal] started at 2019-11-18 14:36:51.366
+Step 1 [InfiniteDivision] OK: took 441 ms
+Step 2 [DivisionDecimal] OK: took 244 ms
+TestCase [DivisionDecimal] finished with status [FINISHED], time taken = 538
+Step 3 [ContainsText] OK: took 294 ms
