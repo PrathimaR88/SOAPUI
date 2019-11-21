@@ -1,0 +1,19 @@
+Test started at 2019-11-21 17:15:28.429
+Step 1 [DeleteEmployee] OK: took 692 ms
+Step 2 [DeleteProperties] OK: took 0 ms
+Step 3 [DeleteEmp] UNKNOWN: took 979 ms
+Step 4 [Data Loop] OK: took 0 ms
+Step 5 [DeleteEmployee] OK: took 632 ms
+Step 6 [DeleteProperties] OK: took 0 ms
+Step 7 [DeleteEmp] UNKNOWN: took 680 ms
+Step 8 [Data Loop] OK: took 0 ms
+Step 9 [DeleteEmployee] OK: took 618 ms
+Step 10 [DeleteProperties] OK: took 0 ms
+Step 11 [DeleteEmp] UNKNOWN: took 672 ms
+Step 12 [Data Loop] OK: took 0 ms
+Step 13 [DeleteEmployee] OK: took 608 ms
+Step 14 [DeleteProperties] OK: took 0 ms
+TestCase finished with status [FINISHED], time taken = 5573
+Step 15 [DeleteEmp] UNKNOWN: took 692 ms
+Step 16 [Data Loop] OK: took 0 ms
+Step 17 [Clean Up] OK: took 0 ms

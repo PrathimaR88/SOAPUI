@@ -1,0 +1,11 @@
+Test started at 2019-11-21 17:13:54.746
+Step 1 [Update_Salary] OK: took 677 ms
+Step 2 [SalaryProperties] OK: took 3 ms
+Step 3 [UpdateSalary] UNKNOWN: took 1118 ms
+Step 4 [Data Loop] OK: took 5 ms
+Step 5 [Update_Salary] OK: took 634 ms
+Step 6 [SalaryProperties] OK: took 0 ms
+TestCase finished with status [FINISHED], time taken = 3144
+Step 7 [UpdateSalary] UNKNOWN: took 707 ms
+Step 8 [Data Loop] OK: took 0 ms
+Step 9 [Clean Up] OK: took 0 ms

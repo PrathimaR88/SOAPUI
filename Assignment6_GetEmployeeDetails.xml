@@ -1,0 +1,47 @@
+Test started at 2019-11-21 17:05:27.350
+Step 1 [Groovy Script REST] OK: took 647 ms
+Step 2 [Properties] OK: took 10 ms
+Step 3 [GetEmployeeDetails] UNKNOWN: took 982 ms
+Step 4 [Data Loop] OK: took 10 ms
+Step 5 [Groovy Script REST] OK: took 632 ms
+Step 6 [Properties] OK: took 0 ms
+Step 7 [GetEmployeeDetails] UNKNOWN: took 728 ms
+Step 8 [Data Loop] OK: took 0 ms
+Step 9 [Groovy Script REST] OK: took 439 ms
+Step 10 [Properties] OK: took 0 ms
+Step 11 [GetEmployeeDetails] UNKNOWN: took 706 ms
+Step 12 [Data Loop] OK: took 0 ms
+Step 13 [Groovy Script REST] OK: took 603 ms
+Step 14 [Properties] OK: took 0 ms
+Step 15 [GetEmployeeDetails] UNKNOWN: took 691 ms
+Step 16 [Data Loop] OK: took 0 ms
+Step 17 [Groovy Script REST] OK: took 607 ms
+Step 18 [Properties] OK: took 0 ms
+Step 19 [GetEmployeeDetails] UNKNOWN: took 708 ms
+Step 20 [Data Loop] OK: took 0 ms
+Step 21 [Groovy Script REST] OK: took 607 ms
+Step 22 [Properties] OK: took 0 ms
+Step 23 [GetEmployeeDetails] UNKNOWN: took 669 ms
+Step 24 [Data Loop] OK: took 0 ms
+Step 25 [Groovy Script REST] OK: took 601 ms
+Step 26 [Properties] OK: took 0 ms
+Step 27 [GetEmployeeDetails] UNKNOWN: took 696 ms
+Step 28 [Data Loop] OK: took 0 ms
+Step 29 [Groovy Script REST] OK: took 677 ms
+Step 30 [Properties] OK: took 0 ms
+Step 31 [GetEmployeeDetails] UNKNOWN: took 689 ms
+Step 32 [Data Loop] OK: took 0 ms
+Step 33 [Groovy Script REST] OK: took 595 ms
+Step 34 [Properties] OK: took 0 ms
+Step 35 [GetEmployeeDetails] UNKNOWN: took 2562 ms
+Step 36 [Data Loop] OK: took 0 ms
+Step 37 [Groovy Script REST] OK: took 566 ms
+Step 38 [Properties] OK: took 0 ms
+Step 39 [GetEmployeeDetails] UNKNOWN: took 668 ms
+Step 40 [Data Loop] OK: took 0 ms
+Step 41 [Groovy Script REST] OK: took 593 ms
+Step 42 [Properties] OK: took 0 ms
+TestCase finished with status [FINISHED], time taken = 18265
+Step 43 [GetEmployeeDetails] UNKNOWN: took 2579 ms
+Step 44 [Data Loop] OK: took 0 ms
+Step 45 [CleanUp] OK: took 0 ms

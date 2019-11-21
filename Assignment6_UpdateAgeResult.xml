@@ -1,0 +1,11 @@
+Test started at 2019-11-21 17:14:50.583
+Step 1 [Update_Age] OK: took 646 ms
+Step 2 [AgeProperties] OK: took 0 ms
+Step 3 [UpdateAge] UNKNOWN: took 774 ms
+Step 4 [Data Loop] OK: took 0 ms
+Step 5 [Update_Age] OK: took 659 ms
+Step 6 [AgeProperties] OK: took 0 ms
+TestCase finished with status [FINISHED], time taken = 2747
+Step 7 [UpdateAge] UNKNOWN: took 667 ms
+Step 8 [Data Loop] OK: took 0 ms
+Step 9 [Clean Up] OK: took 1 ms

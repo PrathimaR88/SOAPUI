@@ -1,0 +1,19 @@
+Test started at 2019-11-21 17:08:58.272
+Step 1 [DataFetch] OK: took 727 ms
+Step 2 [CreateProperties] OK: took 4 ms
+Step 3 [CreateEmployee] UNKNOWN: took 918 ms
+Step 4 [Data Loop] OK: took 5 ms
+Step 5 [DataFetch] OK: took 668 ms
+Step 6 [CreateProperties] OK: took 0 ms
+Step 7 [CreateEmployee] UNKNOWN: took 731 ms
+Step 8 [Data Loop] OK: took 0 ms
+Step 9 [DataFetch] OK: took 589 ms
+Step 10 [CreateProperties] OK: took 0 ms
+Step 11 [CreateEmployee] UNKNOWN: took 943 ms
+Step 12 [Data Loop] OK: took 0 ms
+Step 13 [DataFetch] OK: took 689 ms
+Step 14 [CreateProperties] OK: took 0 ms
+TestCase finished with status [FINISHED], time taken = 6059
+Step 15 [CreateEmployee] UNKNOWN: took 785 ms
+Step 16 [Data Loop] OK: took 0 ms
+Step 17 [CleanUp] OK: took 0 ms
