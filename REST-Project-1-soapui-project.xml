@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="19ec0422-d928-4493-9109-da53ebe7d0e1" activeEnvironment="Default" name="REST Project 1- GETMethod" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="2ad797e6-6164-44d4-8c33-21535c2ad2cb" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://dummy.restapiexample.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://dummy.restapiexample.com</con:endpoint></con:endpoints><con:resource name="EmployeeInfo" path="/api/v1/employee/{empid}" id="328ac46a-8fa6-4eea-828c-10cb426898f3"><con:settings/><con:parameters><con:parameter><con:name>empid</con:name><con:value/><con:style>TEMPLATE</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="GetEmployeeList" id="2023d5db-f17d-4dfe-9048-ccf1c72a9e80" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html;charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="GetEmployeeList" id="e3d7f1f6-0104-44bd-9a47-ea69f87ff233" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request/><con:originalUri>http://dummy.restapiexample.com/employee</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="empid" value="" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>empid</con:entry></con:parameterOrder></con:request><con:request name="GetEmployeeId" id="553dc86a-a8cd-407d-a835-0a6338e68834" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request/><con:originalUri>http://dummy.restapiexample.com/employee/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="empid" value="1" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>empid</con:entry></con:parameterOrder></con:request></con:method></con:resource><con:resource name="EmployeeDelete" path="/api/v1/delete/{empid}" id="6017b2c0-d9f5-49f5-ac0d-cf87b0a191c2"><con:settings/><con:parameters><con:parameter><con:name>empid</con:name><con:value/><con:style>TEMPLATE</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="DeleteMethod" id="f75aef12-6340-4553-93c3-615f263d2154" method="DELETE"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html;charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="EmployeeDelete" id="d0542c20-54ca-4a5b-b65c-944b6e04f260" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request/><con:originalUri>http://dummy.restapiexample.com/api/v1/delete/120381</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>empid</con:entry></con:parameterOrder></con:request></con:method></con:resource><con:resource name="EmployeeCreate" path="/api/v1/create" id="260299ae-0754-4fbe-8cf5-3fd88372b9c2"><con:settings/><con:parameters/><con:method name="PostMethod" id="24655db0-fa70-40e5-9328-44f1237126c7" method="POST"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:request name="EmployeeCreate" id="14195a38-96d8-4a25-90be-6032c9525b7f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request>{"name":"Prathima Rajendra","salary":"789","age":"23"}</con:request><con:originalUri>http://dummy.restapiexample.com/api/v1/create</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="EmployeeUpdate" path="/api/v1/update/{empid}" id="b3d5aa6e-ca38-4eb6-8bad-3a5973e4982a"><con:settings/><con:parameters><con:parameter><con:name>empid</con:name><con:value/><con:style>TEMPLATE</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="PUTMethod" id="63e97260-6a56-496e-841d-ce71235dd972" method="PUT"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>text/html; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html;charset=UTF-8</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:request name="EmployeeUpdate" id="979d93e2-f9c8-43d6-91ce-3345a8a5f461" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request>{"name":"Pratest R","salary":"1134","age":"23"}</con:request><con:originalUri>http://dummy.restapiexample.com/api/v1/update/120416</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="empid" value="98313" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>empid</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="2c8e5a84-c723-433a-afbf-e6562c0ef9be" name="SmokeTest"><con:description>TestSuite generated for REST Service [http://dummy.restapiexample.com]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="855bb784-cfa5-48be-b82e-1b3a227449ac" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="EmployeeDelete TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [EmployeeDelete] located at [/api/v1/delete/120381]</con:description><con:settings/><con:testStep type="restrequest" name="EmployeeDelete" id="aa0bb760-7544-465f-95ab-fac2cff60eb2"><con:settings/><con:config service="http://dummy.restapiexample.com" resourcePath="/api/v1/delete/{empid}" methodName="DeleteMethod" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="EmployeeDelete" id="d0542c20-54ca-4a5b-b65c-944b6e04f260" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request/><con:originalUri>http://dummy.restapiexample.com/api/v1/delete/120381</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="empid" value="" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>empid</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="5586f4a0-6b3a-4287-a022-f290586b9f75" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="EmployeeUpdate TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [EmployeeUpdate] located at [/api/v1/update/120416]</con:description><con:settings/><con:testStep type="restrequest" name="EmployeeUpdate" id="115588f6-d6fd-4b18-ae1c-ebac74a5e152"><con:settings/><con:config service="http://dummy.restapiexample.com" resourcePath="/api/v1/update/{empid}" methodName="PUTMethod" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="EmployeeUpdate" id="979d93e2-f9c8-43d6-91ce-3345a8a5f461" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request>{"name":"Prathima R","salary":"1123","age":"23"}</con:request><con:originalUri>http://dummy.restapiexample.com/api/v1/update/120416</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="empid" value="123123" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>empid</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="2a2c38d7-54c1-452f-8f31-3704ea7c34e4" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetEmployeeDetail_Property" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="GetDetailsofEmployee" id="17a81205-b9bd-47bf-8ed9-80ba6b670260"><con:settings/><con:config service="http://dummy.restapiexample.com" resourcePath="/api/v1/employee/{empid}" methodName="GetEmployeeList" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetDetailsofEmployee" id="553dc86a-a8cd-407d-a835-0a6338e68834" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request/><con:originalUri>http://dummy.restapiexample.com/employee/</con:originalUri><con:assertion type="Simple Contains" id="3a6f38f6-7c24-47eb-9e54-54460bcfd12e" name="Contains"><con:configuration><token>"id":"98313"</token><ignoreCase>true</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="empid" value="${EmpID_Property#empid}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>empid</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="properties" name="EmpID_Property" id="f4357fbc-d172-4f7e-8be8-d50449e0697e"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>empid</con:name><con:value>98313</con:value></con:property><con:property><con:name>TestStep_prop</con:name><con:value>I am test step property</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="restrequest" name="TestCaseprop" id="d2a3a260-a16d-462e-91b6-80e7fc8caf9b"><con:settings/><con:config service="http://dummy.restapiexample.com" resourcePath="/api/v1/employee/{empid}" methodName="GetEmployeeList" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="TestCaseprop" id="553dc86a-a8cd-407d-a835-0a6338e68834" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request/><con:originalUri>http://dummy.restapiexample.com/employee/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="empid" value="${#TestCase#empid_tc}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>empid</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="TestSuiteProp" id="adfb080a-9591-45e7-93af-6482a49d27d9"><con:settings/><con:config service="http://dummy.restapiexample.com" resourcePath="/api/v1/employee/{empid}" methodName="GetEmployeeList" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="TestSuiteProp" id="553dc86a-a8cd-407d-a835-0a6338e68834" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request/><con:originalUri>http://dummy.restapiexample.com/employee/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="empid" value="${#TestSuite#empid_TS}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>empid</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="restrequest" name="ProjectlevelProp" id="01274839-9261-4d7d-98c3-f10e4feccf1d"><con:settings/><con:config service="http://dummy.restapiexample.com" resourcePath="/api/v1/employee/{empid}" methodName="GetEmployeeList" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="ProjectlevelProp" id="553dc86a-a8cd-407d-a835-0a6338e68834" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request/><con:originalUri>http://dummy.restapiexample.com/employee/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="empid" value="${#Project#empid_PL}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>empid</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Read_Properties" id="f6338209-6d2f-4407-ae49-1888d9ef37d6"><con:settings/><con:config><script>log.info ("  Hey there!  ");
+//I am singlr line comment
+/* I am a
+ *  multiline
+ *  comment
+ */
+
+ a = 45
+ b=2
+ c= a+b
+
+ log.info(  "The result is =" +c)
+
+ //Another way is 
+ def a = 45
+ def b=2
+ c= a+b
+log.info(  "The result with def is =" +c)
+
+//Get a test case property
+def testprop= context.expand('${#TestCase#TestCase_prop}')
+log.info(  "The property is  "+testprop)
+
+//Get a test suite property
+def suiteprop= context.expand('${#TestSuite#TestSuiteProp}')
+log.info(  "The property is  "+suiteprop)
+
+//Get a project property
+def projectprop= context.expand('${#Project#Project level property}')
+log.info(  "The property is  "+projectprop)
+
+//Get a step property
+def stepprop= context.expand('${EmpID_Property#TestStep_prop}')
+log.info(  "The property is  "+stepprop)
+
+//get a system property
+def sysprop= context.expand('${#System#user.home}')
+log.info(  "The property is  "+sysprop)
+
+//get env property
+def envprop= context.expand('${#Env#Path}')
+log.info(  "The property is  "+envprop)
+
+//get a global property
+def globalprop = context.expand('${#Global#Global_prop}') 
+log.info ("The property is : " + globalprop)
+</script></con:config></con:testStep><con:testStep type="groovy" name="GettingAndSettingProperties" id="3f18e09b-8cd3-4c52-a5bc-3aa836b9734f"><con:settings/><con:config><script/></con:config></con:testStep><con:properties><con:property><con:name>TestCase_prop</con:name><con:value>I am test case level property</con:value></con:property><con:property><con:name>empid_TC</con:name><con:value>98062</con:value></con:property></con:properties></con:testCase><con:testCase id="c882ea72-114a-43b6-8817-6c7a090473ec" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="UpdateEmployeeDetails" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="UpdateEmployee_property" id="0c90c263-b485-45b1-ada4-4dc742d92991"><con:settings/><con:config service="http://dummy.restapiexample.com" resourcePath="/api/v1/update/{empid}" methodName="PUTMethod" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="UpdateEmployee_property" id="979d93e2-f9c8-43d6-91ce-3345a8a5f461" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request>{"name":"Prime R","salary":"1123","age":"23"}</con:request><con:originalUri>http://dummy.restapiexample.com/api/v1/update/120416</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="empid" value="${UpdateProperties#empid} " xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>empid</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="properties" name="UpdateProperties" id="6599e1d9-84cc-439c-99ab-3fcd39433aaf"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>empid</con:name><con:value>98313</con:value></con:property></con:properties></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="43ba3649-9cf4-4f85-88b7-f79dd6b7f5f9" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="DeleteEmployeeDetails" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="REST Request" id="7ccc1a0d-5c1d-4d62-9732-2385aa5a68ca"><con:settings/><con:config service="http://dummy.restapiexample.com" resourcePath="/api/v1/delete/{empid}" methodName="DeleteMethod" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Request" id="d0542c20-54ca-4a5b-b65c-944b6e04f260" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request/><con:originalUri>http://dummy.restapiexample.com/api/v1/delete/120381</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="empid" value="${DeleteProperties#empid}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>empid</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="properties" name="DeleteProperties" id="bbd80239-ca6b-476c-815d-d233e196efb9"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>empid</con:name><con:value>98050</con:value></con:property></con:properties></con:config></con:testStep><con:properties/></con:testCase><con:properties><con:property><con:name>TestSuiteProp</con:name><con:value>I am in test suite property</con:value></con:property><con:property><con:name>empid_TS</con:name><con:value>98062</con:value></con:property></con:properties></con:testSuite><con:testSuite id="917762dd-63f7-4a4b-b0d4-5c1e208824d4" name="Assignment6_DataDrivenTest"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="445747c1-81b1-4fb2-b0ea-84d45b069470" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="GetEmployeeDetails" searchProperties="true"><con:description>Get the Employee Details for the id's that are provided in the xls file</con:description><con:settings/><con:testStep type="groovy" name="Groovy Script REST" id="e8231422-de4d-430c-a024-ebf6522138e0"><con:settings/><con:config><script>// import Java Excel API library 
+import jxl.*  
+import jxl.write.*
+def TestCase = context.testCase 
+def FilePath = "C:\\Users\\PrathimaR\\Desktop\\Upskill\\API Testing\\Test Data\\EmployeeID.xls" 
+def count
+Workbook WorkBook1 = Workbook.getWorkbook(new File(FilePath))
+Sheet Sheet1 = WorkBook1.getSheet(0)
+PropertiesTestStep = TestCase.getTestStepByName("Properties")
+count = PropertiesTestStep.getPropertyValue("counter").toInteger()
+//If Total records is unknown (at start), get the rowcount from Excel
+if (PropertiesTestStep.getPropertyValue("total").toString() == "")    
+	PropertiesTestStep.setPropertyValue("total", Sheet1.getRows().toString())
+count++ 
+//Read the Excel test data 
+Cell Field1 = Sheet1.getCell(0, count) 
+log.info ("Count is " + count.toString() + " Employee ID " + Field1.getContents())
+
+//Close workbook.
+WorkBook1.close()
+
+//Copy the Excel test data to properties in Properties test step 
+PropertiesTestStep.setPropertyValue("empid", Field1.getContents())
+PropertiesTestStep.setPropertyValue("counter", count.toString()) 
+
+// check the counter value is less than total no of rows. If same set prop 'end' to 'true' 
+if (count == PropertiesTestStep.getPropertyValue("total").toInteger() - 1)     
+PropertiesTestStep.setPropertyValue("end", "true")</script></con:config></con:testStep><con:testStep type="properties" name="Properties" id="d286c5f6-27b4-4215-bf21-bcfedad770d5"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>empid</con:name><con:value/></con:property><con:property><con:name>counter</con:name><con:value>0</con:value></con:property><con:property><con:name>end</con:name><con:value>false</con:value></con:property><con:property><con:name>total</con:name><con:value/></con:property></con:properties></con:config></con:testStep><con:testStep type="restrequest" name="GetEmployeeDetails" id="29c66ef2-15a1-4b6b-9e97-50e006b5a6b6"><con:settings/><con:config service="http://dummy.restapiexample.com" resourcePath="/api/v1/employee/{empid}" methodName="GetEmployeeList" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="GetEmployeeDetails" id="553dc86a-a8cd-407d-a835-0a6338e68834" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request/><con:originalUri>http://dummy.restapiexample.com/employee/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="empid" value="${Properties#empid}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>empid</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Data Loop" id="4de5d987-9dff-4ab8-91ad-051c80463e3e"><con:settings/><con:config><script>//declare context, property step
+def TestCase = context.testCase
+PropertiesTestStep = TestCase.getTestStepByName("Properties")
+
+//get prop value for 'end'
+Stop = PropertiesTestStep.getPropertyValue("end").toString()
+if (Stop=="true")
+	log.info("Data Loop")
+else
+	testRunner.gotoStepByName("Groovy Script REST")	</script></con:config></con:testStep><con:testStep type="groovy" name="CleanUp" id="c5638dfb-3940-4f85-b760-12b320c22751"><con:settings/><con:config><script>def TestCase = context.testCase
+PropertiesTestStep = TestCase.getTestStepByName("Properties")
+PropertiesTestStep.setPropertyValue("empid","")
+PropertiesTestStep.setPropertyValue("counter", "0")
+PropertiesTestStep.setPropertyValue("total", "")
+PropertiesTestStep.setPropertyValue("end", "false")</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="6db34898-4a2c-419d-aa45-203fe5ad422b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="CreateEmployeeDetails" searchProperties="true"><con:description>Create new Employee from the list of details in xls file</con:description><con:settings/><con:testStep type="groovy" name="DataFetch" id="33df32d3-3987-4e53-bbbd-f76bbf16341f"><con:settings/><con:config><script>// import Java Excel API library 
+import jxl.*  
+import jxl.write.*
+def TestCase = context.testCase 
+def FilePath = "C:\\Users\\PrathimaR\\Desktop\\Upskill\\API Testing\\Test Data\\CreateEmployee.xls" 
+def count
+Workbook WorkBook1 = Workbook.getWorkbook(new File(FilePath))
+Sheet Sheet1 = WorkBook1.getSheet(0)
+PropertiesTestStep = TestCase.getTestStepByName("CreateProperties")
+count = PropertiesTestStep.getPropertyValue("counter").toInteger()
+//If Total records is unknown (at start), get the rowcount from Excel
+if (PropertiesTestStep.getPropertyValue("total").toString() == "")    
+	PropertiesTestStep.setPropertyValue("total", Sheet1.getRows().toString())
+count++ 
+//Read the Excel test data 
+Cell Field1 = Sheet1.getCell(0, count) 
+log.info ("Count is " + count.toString() + " JSON Value " + Field1.getContents())
+
+//Close workbook.
+WorkBook1.close()
+
+//Copy the Excel test data to properties in Properties test step 
+PropertiesTestStep.setPropertyValue("jsondata", Field1.getContents())
+PropertiesTestStep.setPropertyValue("counter", count.toString()) 
+
+// check the counter value is less than total no of rows. If same set prop 'end' to 'true' 
+if (count == PropertiesTestStep.getPropertyValue("total").toInteger() - 1)     
+PropertiesTestStep.setPropertyValue("end", "true")</script></con:config></con:testStep><con:testStep type="properties" name="CreateProperties" id="8ecec846-44a3-4644-84e8-a9d7cf8febc4"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>jsondata</con:name><con:value/></con:property><con:property><con:name>counter</con:name><con:value>0</con:value></con:property><con:property><con:name>total</con:name><con:value/></con:property><con:property><con:name>end</con:name><con:value>false</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="restrequest" name="CreateEmployee" id="df27227c-aff2-4e94-ae35-03cada95e096"><con:settings/><con:config service="http://dummy.restapiexample.com" resourcePath="/api/v1/create" methodName="PostMethod" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CreateEmployee" id="14195a38-96d8-4a25-90be-6032c9525b7f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request>${CreateProperties#jsondata}</con:request><con:originalUri>http://dummy.restapiexample.com/api/v1/create</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Data Loop" id="0476337a-148a-4570-a170-c77ab43eaa1f"><con:settings/><con:config><script>//declare context, property step
+def TestCase = context.testCase
+PropertiesTestStep = TestCase.getTestStepByName("CreateProperties")
+
+//get prop value for 'end'
+Stop = PropertiesTestStep.getPropertyValue("end").toString()
+if (Stop=="true")
+	log.info("Data Loop")
+else
+	testRunner.gotoStepByName("DataFetch")	</script></con:config></con:testStep><con:testStep type="groovy" name="CleanUp" id="fc7d178a-4add-4a7c-a25f-1af88e6c607e"><con:settings/><con:config><script>def TestCase = context.testCase
+PropertiesTestStep = TestCase.getTestStepByName("CreateProperties")
+PropertiesTestStep.setPropertyValue("jsondata","")
+PropertiesTestStep.setPropertyValue("counter", "0")
+PropertiesTestStep.setPropertyValue("total", "")
+PropertiesTestStep.setPropertyValue("end", "false")</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="65d88937-e05c-4844-86b6-9214e2608077" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="UpdateSalary" searchProperties="true"><con:description>Update the salary for the newly created employees with data from xls</con:description><con:settings/><con:testStep type="groovy" name="Update_Salary" id="4dacc97d-c8da-4437-96d0-c4b9d8a5df55"><con:settings/><con:config><script>// import Java Excel API library 
+import jxl.*  
+import jxl.write.*
+def TestCase = context.testCase 
+def FilePath = "C:\\Users\\PrathimaR\\Desktop\\Upskill\\API Testing\\Test Data\\UpdateSalary.xls" 
+def count
+Workbook WorkBook1 = Workbook.getWorkbook(new File(FilePath))
+Sheet Sheet1 = WorkBook1.getSheet(0)
+PropertiesTestStep = TestCase.getTestStepByName("SalaryProperties")
+count = PropertiesTestStep.getPropertyValue("counter").toInteger()
+//If Total records is unknown (at start), get the rowcount from Excel
+if (PropertiesTestStep.getPropertyValue("total").toString() == "")    
+	PropertiesTestStep.setPropertyValue("total", Sheet1.getRows().toString())
+count++ 
+//Read the Excel test data 
+Cell Field1 = Sheet1.getCell(0, count) 
+Cell Field2 = Sheet1.getCell(1, count)
+log.info ("Count is " + count.toString() + " Employee ID " + Field1.getContents() +  "JasonValue  " + Field2.getContents())
+
+//Close workbook.
+WorkBook1.close()
+
+//Copy the Excel test data to properties in Properties test step 
+PropertiesTestStep.setPropertyValue("empid", Field1.getContents())
+PropertiesTestStep.setPropertyValue("updateval", Field2.getContents())
+PropertiesTestStep.setPropertyValue("counter", count.toString()) 
+
+// check the counter value is less than total no of rows. If same set prop 'end' to 'true' 
+if (count == PropertiesTestStep.getPropertyValue("total").toInteger() - 1)     
+PropertiesTestStep.setPropertyValue("end", "true")</script></con:config></con:testStep><con:testStep type="properties" name="SalaryProperties" id="71ce3ccc-f214-4073-8f18-6ee4027548aa"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>empid</con:name><con:value/></con:property><con:property><con:name>updateval</con:name><con:value/></con:property><con:property><con:name>counter</con:name><con:value>0</con:value></con:property><con:property><con:name>total</con:name><con:value/></con:property><con:property><con:name>end</con:name><con:value>false</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="restrequest" name="UpdateSalary" id="65a22245-fedf-4db7-867a-b6dc0ff00955"><con:settings/><con:config service="http://dummy.restapiexample.com" resourcePath="/api/v1/update/{empid}" methodName="PUTMethod" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="UpdateSalary" id="979d93e2-f9c8-43d6-91ce-3345a8a5f461" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request>${SalaryProperties#updateval}</con:request><con:originalUri>http://dummy.restapiexample.com/api/v1/update/120416</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="empid" value="${SalaryProperties#empid}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>empid</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Data Loop" id="2b2cd3e6-cf2b-4983-b3da-73e08623bedf"><con:settings/><con:config><script>//declare context, property step
+def TestCase = context.testCase
+PropertiesTestStep = TestCase.getTestStepByName("SalaryProperties")
+
+//get prop value for 'end'
+Stop = PropertiesTestStep.getPropertyValue("end").toString()
+if (Stop=="true")
+	log.info("Data Loop")
+else
+	testRunner.gotoStepByName("Update_Salary")	</script></con:config></con:testStep><con:testStep type="groovy" name="Clean Up" id="59eca09c-6848-4ed2-ba5b-f4f09be8ca99"><con:settings/><con:config><script>def TestCase = context.testCase
+PropertiesTestStep = TestCase.getTestStepByName("SalaryProperties")
+PropertiesTestStep.setPropertyValue("empid","")
+PropertiesTestStep.setPropertyValue("updateval", "")
+PropertiesTestStep.setPropertyValue("counter", "0")
+PropertiesTestStep.setPropertyValue("total", "")
+PropertiesTestStep.setPropertyValue("end", "false")</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="9d457175-b2b1-4d9c-99c2-83bd0fa0b826" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="UpdateAge" searchProperties="true"><con:description>Update age of the newly created employee as per the data from xls file</con:description><con:settings/><con:testStep type="groovy" name="Update_Age" id="cd05310c-7ebb-4271-bf71-8ebe4fddab9d"><con:settings/><con:config><script>// import Java Excel API library 
+import jxl.*  
+import jxl.write.*
+def TestCase = context.testCase 
+def FilePath = "C:\\Users\\PrathimaR\\Desktop\\Upskill\\API Testing\\Test Data\\UpdateAge.xls" 
+def count
+Workbook WorkBook1 = Workbook.getWorkbook(new File(FilePath))
+Sheet Sheet1 = WorkBook1.getSheet(0)
+PropertiesTestStep = TestCase.getTestStepByName("AgeProperties")
+count = PropertiesTestStep.getPropertyValue("counter").toInteger()
+//If Total records is unknown (at start), get the rowcount from Excel
+if (PropertiesTestStep.getPropertyValue("total").toString() == "")    
+	PropertiesTestStep.setPropertyValue("total", Sheet1.getRows().toString())
+count++ 
+//Read the Excel test data 
+Cell Field1 = Sheet1.getCell(0, count) 
+Cell Field2 = Sheet1.getCell(1, count)
+log.info ("Count is " + count.toString() + " Employee ID " + Field1.getContents() +  "JasonValue  " + Field2.getContents())
+
+//Close workbook.
+WorkBook1.close()
+
+//Copy the Excel test data to properties in Properties test step 
+PropertiesTestStep.setPropertyValue("empid", Field1.getContents())
+PropertiesTestStep.setPropertyValue("updateage", Field2.getContents())
+PropertiesTestStep.setPropertyValue("counter", count.toString()) 
+
+// check the counter value is less than total no of rows. If same set prop 'end' to 'true' 
+if (count == PropertiesTestStep.getPropertyValue("total").toInteger() - 1)     
+PropertiesTestStep.setPropertyValue("end", "true")</script></con:config></con:testStep><con:testStep type="properties" name="AgeProperties" id="27ebbf72-3f98-4623-b522-a1645e431b18"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>empid</con:name><con:value/></con:property><con:property><con:name>updateage</con:name><con:value/></con:property><con:property><con:name>counter</con:name><con:value>0</con:value></con:property><con:property><con:name>total</con:name><con:value/></con:property><con:property><con:name>end</con:name><con:value>false</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="restrequest" name="UpdateAge" id="eadc259f-0c4b-4a61-aadb-6f09b402f59f"><con:settings/><con:config service="http://dummy.restapiexample.com" resourcePath="/api/v1/update/{empid}" methodName="PUTMethod" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="UpdateAge" id="979d93e2-f9c8-43d6-91ce-3345a8a5f461" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request>${AgeProperties#updateage}</con:request><con:originalUri>http://dummy.restapiexample.com/api/v1/update/120416</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="empid" value="${AgeProperties#empid}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>empid</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Data Loop" id="31448651-8758-494b-8e53-aee4c75b72e8"><con:settings/><con:config><script>//declare context, property step
+def TestCase = context.testCase
+PropertiesTestStep = TestCase.getTestStepByName("AgeProperties")
+
+//get prop value for 'end'
+Stop = PropertiesTestStep.getPropertyValue("end").toString()
+if (Stop=="true")
+	log.info("Data Loop")
+else
+	testRunner.gotoStepByName("Update_Age")	</script></con:config></con:testStep><con:testStep type="groovy" name="Clean Up" id="618fc3f8-0585-4bbb-8f13-0efdc820fcea"><con:settings/><con:config><script>def TestCase = context.testCase
+PropertiesTestStep = TestCase.getTestStepByName("AgeProperties")
+PropertiesTestStep.setPropertyValue("empid","")
+PropertiesTestStep.setPropertyValue("updateage", "")
+PropertiesTestStep.setPropertyValue("counter", "0")
+PropertiesTestStep.setPropertyValue("total", "")
+PropertiesTestStep.setPropertyValue("end", "false")</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="60433ec4-6035-4f6a-baec-0483caa55025" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="DeleteEmployee" searchProperties="true"><con:settings/><con:testStep type="groovy" name="DeleteEmployee" id="2fb495fb-d0eb-4add-82ab-aa31d2c23ad1"><con:settings/><con:config><script>// import Java Excel API library 
+import jxl.*  
+import jxl.write.*
+def TestCase = context.testCase 
+def FilePath = "C:\\Users\\PrathimaR\\Desktop\\Upskill\\API Testing\\Test Data\\Deleteid.xls" 
+def count
+Workbook WorkBook1 = Workbook.getWorkbook(new File(FilePath))
+Sheet Sheet1 = WorkBook1.getSheet(0)
+PropertiesTestStep = TestCase.getTestStepByName("DeleteProperties")
+count = PropertiesTestStep.getPropertyValue("counter").toInteger()
+//If Total records is unknown (at start), get the rowcount from Excel
+if (PropertiesTestStep.getPropertyValue("total").toString() == "")    
+	PropertiesTestStep.setPropertyValue("total", Sheet1.getRows().toString())
+count++ 
+//Read the Excel test data 
+Cell Field1 = Sheet1.getCell(0, count) 
+log.info ("Count is " + count.toString() + " Employee ID " + Field1.getContents())
+
+//Close workbook.
+WorkBook1.close()
+
+//Copy the Excel test data to properties in Properties test step 
+PropertiesTestStep.setPropertyValue("empid", Field1.getContents())
+PropertiesTestStep.setPropertyValue("counter", count.toString()) 
+
+// check the counter value is less than total no of rows. If same set prop 'end' to 'true' 
+if (count == PropertiesTestStep.getPropertyValue("total").toInteger() - 1)     
+PropertiesTestStep.setPropertyValue("end", "true")</script></con:config></con:testStep><con:testStep type="properties" name="DeleteProperties" id="d2a99980-89d2-4c50-86a3-e6a06182fb06"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>empid</con:name><con:value/></con:property><con:property><con:name>counter</con:name><con:value>0</con:value></con:property><con:property><con:name>total</con:name><con:value/></con:property><con:property><con:name>end</con:name><con:value>false</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="restrequest" name="DeleteEmp" id="76a295b2-0204-4f6d-8117-c853f33030ad"><con:settings/><con:config service="http://dummy.restapiexample.com" resourcePath="/api/v1/delete/{empid}" methodName="DeleteMethod" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="DeleteEmp" id="d0542c20-54ca-4a5b-b65c-944b6e04f260" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://dummy.restapiexample.com</con:endpoint><con:request/><con:originalUri>http://dummy.restapiexample.com/api/v1/delete/120381</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="empid" value="${DeleteProperties#empid}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>empid</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Data Loop" id="ddab5568-432d-4837-aadf-990c21183f9b"><con:settings/><con:config><script>//declare context, property step
+def TestCase = context.testCase
+PropertiesTestStep = TestCase.getTestStepByName("DeleteProperties")
+
+//get prop value for 'end'
+Stop = PropertiesTestStep.getPropertyValue("end").toString()
+if (Stop=="true")
+	log.info("Data Loop")
+else
+	testRunner.gotoStepByName("DeleteEmployee")	</script></con:config></con:testStep><con:testStep type="groovy" name="Clean Up" id="ca221810-4dea-452e-8887-83756e11e66d"><con:settings/><con:config><script>def TestCase = context.testCase
+PropertiesTestStep = TestCase.getTestStepByName("DeleteProperties")
+PropertiesTestStep.setPropertyValue("empid","")
+PropertiesTestStep.setPropertyValue("counter", "0")
+PropertiesTestStep.setPropertyValue("total", "")
+PropertiesTestStep.setPropertyValue("end", "false")</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>Project level property</con:name><con:value>I am in project level property</con:value></con:property><con:property><con:name>empid_PL</con:name><con:value>98062</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
