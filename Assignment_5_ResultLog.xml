@@ -1,0 +1,30 @@
+TestCase [SimpleAdd] started at 2019-11-21 09:42:09.831
+Step 1 [Properties] OK: took 21 ms
+Step 2 [SimpleAdd] OK: took 1245 ms
+Step 3 [ValB] OK: took 231 ms
+ -> Performed transfer [ValB]
+TestCase [SimpleAdd] finished with status [FINISHED], time taken = 1763
+Step 4 [Multiply] OK: took 266 ms
+TestCase [AddAndSubtract] started at 2019-11-21 09:42:11.621
+Step 1 [Properties] OK: took 0 ms
+Step 2 [Addition] OK: took 270 ms
+Step 3 [ResultTransfer] OK: took 5 ms
+ -> Performed transfer [Sub_A]
+TestCase [AddAndSubtract] finished with status [FINISHED], time taken = 538
+TestCase [SimpleMultiply] started at 2019-11-21 09:42:12.166
+Step 1 [Subtract] OK: took 263 ms
+Step 2 [Properties] OK: took 0 ms
+TestCase [SimpleMultiply] finished with status [FINISHED], time taken = 324
+TestCase [MultyAndDivide] started at 2019-11-21 09:42:12.496
+Step 1 [SimpleMulty] OK: took 324 ms
+Step 2 [Properties] OK: took 0 ms
+Step 3 [Multy] OK: took 264 ms
+Step 4 [MultResult] OK: took 3 ms
+ -> Performed transfer [DivA]
+TestCase [MultyAndDivide] finished with status [FINISHED], time taken = 531
+TestCase [DivideAndMulty] started at 2019-11-21 09:42:13.033
+Step 1 [Division] OK: took 264 ms
+Step 2 [AllValues] OK: took 0 ms
+Step 3 [Divide] OK: took 263 ms
+TestCase [DivideAndMulty] finished with status [FINISHED], time taken = 522
+Step 4 [Multy] OK: took 259 ms
