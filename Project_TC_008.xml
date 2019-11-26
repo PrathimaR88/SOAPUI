@@ -1,0 +1,6 @@
+Test started at 2019-11-26 11:38:20.181
+Step 1 [Groovy Script] OK: took 515 ms
+Step 2 [Properties] OK: took 5 ms
+TestCase finished with status [FINISHED], time taken = 2084
+Step 3 [CreateNewProduct] OK: took 1564 ms
+Step 4 [Clean Up] OK: took 0 ms
