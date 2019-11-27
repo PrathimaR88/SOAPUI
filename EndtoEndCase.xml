@@ -1,9 +1,0 @@
-Test started at 2019-11-26 17:17:45.707
-Step 1 [TC_009] OK: took 1136 ms
-Step 2 [Property Transfer_SKU] OK: took 6 ms
- -> Performed transfer [SKU]
-Step 3 [TC_010] OK: took 914 ms
-Step 4 [SKUProperty Transfer] OK: took 5 ms
- -> Performed transfer [sku]
-TestCase finished with status [FINISHED], time taken = 2664
-Step 5 [TC_011] OK: took 603 ms
