@@ -1,0 +1,13 @@
+Test started at 2019-11-28 14:23:13.061
+Step 1 [TC_007_GetAllProdType] OK: took 1342 ms
+Step 2 [Groovy Script] OK: took 1369 ms
+Step 3 [Properties] OK: took 17 ms
+Step 4 [TC_008_CreateNewProduct] OK: took 1140 ms
+Step 5 [Clean Up] OK: took 46 ms
+Step 6 [TC_009_AllProductList] OK: took 807 ms
+Step 7 [Groovy Script Response] OK: took 69 ms
+Step 8 [TC_010_ProdDetailbySKU] OK: took 867 ms
+Step 9 [SKUProperty Transfer] OK: took 186 ms
+ -> Performed transfer [sku]
+TestCase finished with status [FINISHED], time taken = 6815
+Step 10 [TC_011_DeletebySKU] OK: took 972 ms
