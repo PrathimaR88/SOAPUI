@@ -1,0 +1,15 @@
+Test started at 2019-12-02 15:19:18.872
+Step 1 [CustDataProperties] OK: took 0 ms
+Step 2 [CreateCust] OK: took 609 ms
+Step 3 [FetchCustomerID] OK: took 104 ms
+Step 4 [Property Transfer] OK: took 3 ms
+ -> Performed transfer [cust_id]
+Step 5 [GetCustomer] OK: took 314 ms
+Step 6 [RProperty Transfer] OK: took 1 ms
+ -> Performed transfer [cust_id_re]
+Step 7 [RewardProperties] OK: took 0 ms
+Step 8 [AddReward] OK: took 309 ms
+Step 9 [FProperty Transfer] OK: took 1 ms
+ -> Performed transfer [det]
+TestCase finished with status [FINISHED], time taken = 1663
+Step 10 [GetCustDetail] OK: took 322 ms

@@ -1,0 +1,11 @@
+Test started at 2019-12-02 15:03:43.511
+Step 1 [Groovy] OK: took 948 ms
+Step 2 [Properties] OK: took 0 ms
+Step 3 [CreateCustomer] OK: took 648 ms
+Step 4 [DataCleanUP] OK: took 23 ms
+Step 5 [GetCustomerDetail] OK: took 70 ms
+Step 6 [CustomerDetailProperties] OK: took 0 ms
+Step 7 [GetCreatedCustomer] OK: took 357 ms
+Step 8 [PostReward] OK: took 343 ms
+TestCase finished with status [FINISHED], time taken = 2730
+Step 9 [GetCustomerInfo] OK: took 341 ms
